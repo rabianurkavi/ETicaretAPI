@@ -34,8 +34,9 @@ namespace ETicaretAPI.Persistence.Repositories
         //Bu tarz çalışmalarda yapılması gereken iki işlem vardır ya reflection ya da marker patterına uygun bir alt yapıda çalışma.
         //Şöyle olacak GetById de olduğu gibi değersel çalışmalar yapıyorsak bir arayüz ya da sınıf tasarlamamız gerekiyor.
         //class olarak BaseEntity olarak T yi tanımlarsak her entity bulunan propertyleri getirecektir.
-        public Task<T> GetById(string id)
-           => Table.FirstOrDefaultAsync(p => p.Id == Guid.Parse(id));
+        public async Task<T> GetByIdAsync(string id)
+            //=> Table.FirstOrDefaultAsync(p => p.Id == Guid.Parse(id));
+            => await Table.FindAsync(Guid.Parse(id));
 
 
     }

@@ -19,6 +19,6 @@ namespace ETicaretAPI.Application.Repositories
         IQueryable<T> GetWhere(Expression<Func<T, bool>> method);// bir şart vereceğim şarta uygun birden fazla veriyi getir
         Task<T> GetSingle(Expression<Func<T, bool>> method);//FirstOrDefaultun async versiyonunu kullanacak bundan dolayı T GetSingle(Expression<Func<T, bool>> method)'dan
         //Task e dönüştürüyoruz.
-        Task<T> GetById(string id);//Bu da Async kullanacak
+        Task<T> GetByIdAsync(string id);//Bu da Async kullanacak
     }
 }
