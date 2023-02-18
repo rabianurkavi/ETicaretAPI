@@ -12,7 +12,7 @@ namespace ETicaretAPI.Application.Repositories
     {
         //Sadece select işlemleri. Get, GetByID, List
 
-        //Niye IQueryable: sorgu üzerinden çalışmak istiyorsak IQueryable.Inmemory de çalışmak istiyorsak IEnumarable
+        //Niye IQueryable: sorgu üzerinden çalışmak istiyorsak IQueryable(veritabanı).Inmemory de çalışmak istiyorsak IEnumarable
         // IQueryable ise senin yazmış olduğun şartlar ilgili veri tabanı sorgusuna eklenecektir.
         //List IEnumarable dir Inmemorye çeker o şekilde işlem yapar.
         IQueryable<T> GetAll();

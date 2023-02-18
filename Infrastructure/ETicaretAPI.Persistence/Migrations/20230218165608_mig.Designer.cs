@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ETicaretAPI.Persistence.Migrations
 {
     [DbContext(typeof(ETicaretAPIDbContext))]
-    [Migration("20220919152607_mig_1")]
-    partial class mig_1
+    [Migration("20230218165608_mig")]
+    partial class mig
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

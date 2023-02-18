@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ETicaretAPI.Persistence.Migrations
 {
-    public partial class mig_1 : Migration
+    public partial class mig : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
