@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ECommenceClient": {
+    "ETicaretUI": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ecommence-client",
+            "outputPath": "dist/eticaret-ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ECommenceClient:build:production"
+              "browserTarget": "ETicaretUI:build:production"
             },
             "development": {
-              "browserTarget": "ECommenceClient:build:development"
+              "browserTarget": "ETicaretUI:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ECommenceClient:build"
+            "browserTarget": "ETicaretUI:build"
           }
         },
         "test": {
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f7683edd-38fc-45a7-947f-56319843c840"
   }
 }
