@@ -29,11 +29,17 @@ namespace ETicaretAPI.API.Controllers
             _orderReadRepository = orderReadRepository;
         }
         [HttpGet]
-        public async Task Get()
+        public async Task<IActionResult> Get()
         {
-            Order order= await _orderReadRepository.GetByIdAsync("5328e42e-b948-4c8e-74f3-08db18c68ca4");
-            order.Address = "İstanbul";
-            await _orderWriteRepository.SaveAsync();
+            //await _productWriteRepository.AddRangeAsync(new()
+            //{
+            //    new() { Id= Guid.NewGuid(), Name= "Televizyon" , Price = 5678, Stock= 50, CreatedDate=DateTime.Now },
+            //    new() { Id = Guid.NewGuid(), Name = "Telefon",  Price = 7520, Stock = 20, CreatedDate = DateTime.Now },
+
+            //});
+            //var count = await _productWriteRepository.SaveAsync();
+            return Ok("Merhaba UI");
+            
 
         }
     }
