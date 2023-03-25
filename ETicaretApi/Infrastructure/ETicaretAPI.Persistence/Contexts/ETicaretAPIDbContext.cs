@@ -36,11 +36,12 @@ namespace ETicaretAPI.Persistence.Contexts
             var datas = ChangeTracker.Entries<BaseEntity>();
             foreach (var data in datas)
             {
-                _ =data.State switch //_ herhangi bir atama işlemi yapmıyoruz
+                _ = data.State switch //_ herhangi bir atama işlemi yapmıyoruz
                 {
                     //eğerki ekleme işlemi ise 
-                    EntityState.Added=> data.Entity.CreatedDate=DateTime.UtcNow,
-                    EntityState.Modified=>data.Entity.UpdatedDate=DateTime.UtcNow
+                    EntityState.Added => data.Entity.CreatedDate = DateTime.UtcNow,
+                    EntityState.Modified => data.Entity.UpdatedDate = DateTime.UtcNow,
+                    _ => DateTime.UtcNow
                 };
             }
             //gelen isteklerde (insert,update) insertse createddate update ise uptadeddate i dolduracağız.
