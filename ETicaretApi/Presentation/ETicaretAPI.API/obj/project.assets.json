@@ -2,6 +2,56 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "FluentValidation/11.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.5.1",
+          "FluentValidation.DependencyInjectionExtensions": "11.5.1"
+        },
+        "compile": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.5.1": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.5.1",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -1339,6 +1389,9 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "ETicaretAPI.Domain": "1.0.0",
+          "FluentValidation": "11.5.1",
+          "FluentValidation.AspNetCore": "11.3.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.5.1",
           "Microsoft.EntityFrameworkCore": "6.0.9",
           "System.Linq.Expressions": "4.3.0"
         },
@@ -1357,6 +1410,19 @@
         },
         "runtime": {
           "bin/placeholder/ETicaretAPI.Domain.dll": {}
+        }
+      },
+      "ETicaretAPI.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ETicaretAPI.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ETicaretAPI.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ETicaretAPI.Infrastructure.dll": {}
         }
       },
       "ETicaretAPI.Persistence/1.0.0": {
@@ -1379,6 +1445,65 @@
     }
   },
   "libraries": {
+    "FluentValidation/11.5.1": {
+      "sha512": "0h1Q5lNOLLyYTWMJmyNoMqhY4CBRvvUWvJP1R4F2CnmmzuWwvB0A8aVmw5+lOuwYnwUwCRrdeMLbc81F38ahNQ==",
+      "type": "package",
+      "path": "fluentvalidation/11.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.5.1.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/11.3.0": {
+      "sha512": "jtFVgKnDFySyBlPS8bZbTKEEwJZnn11rXXJ2SQnjDhZ56rQqybBg9Joq4crRLz3y0QR8WoOq4iE4piV81w/Djg==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/11.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/net5.0/FluentValidation.AspNetCore.dll",
+        "lib/net5.0/FluentValidation.AspNetCore.xml",
+        "lib/net6.0/FluentValidation.AspNetCore.dll",
+        "lib/net6.0/FluentValidation.AspNetCore.xml",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.5.1": {
+      "sha512": "iWM0LS1MDYX06pcjMEQKqHirl2zkjHlNV23mEJSoR1IZI7KQmTa0RcTtGEJpj5+iHvBCfrzP2mYKM4FtRKVb+A==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -4254,6 +4379,11 @@
       "path": "../../Core/ETicaretAPI.Domain/ETicaretAPI.Domain.csproj",
       "msbuildProject": "../../Core/ETicaretAPI.Domain/ETicaretAPI.Domain.csproj"
     },
+    "ETicaretAPI.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastructure/ETicaretAPI.Infrastructure/ETicaretAPI.Infrastructure.csproj",
+      "msbuildProject": "../../Infrastructure/ETicaretAPI.Infrastructure/ETicaretAPI.Infrastructure.csproj"
+    },
     "ETicaretAPI.Persistence/1.0.0": {
       "type": "project",
       "path": "../../Infrastructure/ETicaretAPI.Persistence/ETicaretAPI.Persistence.csproj",
@@ -4262,6 +4392,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ETicaretAPI.Infrastructure >= 1.0.0",
       "ETicaretAPI.Persistence >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.9",
       "Swashbuckle.AspNetCore >= 6.2.3"
@@ -4294,6 +4425,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\kavir\\OneDrive\\Masaüstü\\ETicaretApi\\Infrastructure\\ETicaretAPI.Infrastructure\\ETicaretAPI.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\kavir\\OneDrive\\Masaüstü\\ETicaretApi\\Infrastructure\\ETicaretAPI.Infrastructure\\ETicaretAPI.Infrastructure.csproj"
+            },
             "C:\\Users\\kavir\\OneDrive\\Masaüstü\\ETicaretApi\\Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj": {
               "projectPath": "C:\\Users\\kavir\\OneDrive\\Masaüstü\\ETicaretApi\\Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj"
             }

@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "O2NLtNAowl2FP0m83A1rIWLw7tuSNeg5CKiRDSZJoYradutGx0qsKtuKD+Ns4U2CubuEghZAzCv4lBz5atgbLg==",
+  "dgSpecHash": "OU4l0opuargHkrW9byAjwoO7Pn2Ri1Cgv5hxOgHqlG7yRKfSO50rIiyDRt+r/7nuACaw8AY7o3pUU9wGt8wt6g==",
   "success": true,
   "projectFilePath": "C:\\Users\\kavir\\OneDrive\\Masaüstü\\ETicaretApi\\Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kavir\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\kavir\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\kavir\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\kavir\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\kavir\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\kavir\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
