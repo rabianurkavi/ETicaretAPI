@@ -137,3 +137,8 @@ C:\Users\kavir\OneDrive\Masaüstü\ETicaretApi\Presentation\ETicaretAPI.API\obj\
 C:\Users\kavir\OneDrive\Masaüstü\ETicaretApi\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.pdb
 C:\Users\kavir\OneDrive\Masaüstü\ETicaretApi\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.genruntimeconfig.cache
 C:\Users\kavir\OneDrive\Masaüstü\ETicaretApi\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ref\ETicaretAPI.API.dll
+C:\Users\kavir\OneDrive\Masaüstü\ETicaretApi\Presentation\ETicaretAPI.API\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\kavir\OneDrive\Masaüstü\ETicaretApi\Presentation\ETicaretAPI.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\kavir\OneDrive\Masaüstü\ETicaretApi\Presentation\ETicaretAPI.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\kavir\OneDrive\Masaüstü\ETicaretApi\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.Infrastructure.dll
+C:\Users\kavir\OneDrive\Masaüstü\ETicaretApi\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.Infrastructure.pdb
